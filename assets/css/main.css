@@ -1764,3 +1764,6 @@ input, select, textarea {
     letter-spacing: 0.45rem;
     text-transform: uppercase;
 }
+body {
+    padding-top: 72px;
+}
