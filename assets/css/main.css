@@ -1291,16 +1291,16 @@ input, select, textarea {
 			}
 
 		#header .logo {
-			width: 5.5rem;
-			height: 5.5rem;
-			line-height: 5.5rem;
-			border: none;
-			border-radius: 0;
-		}
+    width: auto;
+    height: auto;
+    line-height: normal;
+    border: none;
+    border-radius: 0;
+}
 
 			#header .logo img {
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
     object-fit: contain;
 }
 
