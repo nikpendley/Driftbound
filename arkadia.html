@@ -119,6 +119,21 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+	const menu = document.querySelector('.home-menu');
+	const menuButton = document.querySelector('#menuToggle');
+
+	menuButton.addEventListener('click', function (event) {
+		event.stopPropagation();
+		menu.classList.toggle('open');
+	});
+
+	document.addEventListener('click', function (event) {
+		if (!menu.contains(event.target)) {
+			menu.classList.remove('open');
+		}
+	});
+</script>
 
 	</body>
 </html>
