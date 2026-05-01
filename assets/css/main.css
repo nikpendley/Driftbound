@@ -779,7 +779,10 @@ input, select, textarea {
 	left: 25px;
 	transform: translateY(-50%);
 	z-index: 10000;
+	/* important */
+	display: inline-block;
 }
+
 
 .home-menu-button {
 	display: flex;
@@ -803,11 +806,17 @@ input, select, textarea {
 
 .home-menu-content {
 	display: none;
-	flex-direction: column;
+	position: absolute;
+	top: 100%;      /* starts directly below button */
+	left: 0;
 	margin-top: 8px;
+
+	flex-direction: column;
+	min-width: 140px;
+
 	border: 1px solid rgba(255,255,255,0.6);
 	border-radius: 6px;
-	background: rgba(0,0,0,0.35);
+	background: rgba(0,0,0,0.75);
 	backdrop-filter: blur(4px);
 	overflow: hidden;
 }
@@ -847,9 +856,9 @@ input, select, textarea {
 	}
 
 	.home-menu-content {
-		align-items: center;
-		min-width: 140px;
-	}
+	left: 50%;
+	transform: translateX(-50%);
+}
 }
 
 /* Actions */
