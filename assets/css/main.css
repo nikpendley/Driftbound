@@ -26,9 +26,11 @@ section, summary, time, mark, audio, video {
 	vertical-align: baseline;}
 
 #header nav {
-	order: -1;
 	margin-bottom: 2rem;
 	margin-top: 1rem;
+}
+body.home-page #header nav {
+	order: -1;
 }
 
 #header .content {
@@ -1557,6 +1559,17 @@ background: rgba(255,255,255,0.05);
 					height: calc(2rem + 1px);
 				}
 
+				body.home-page #header nav {
+					order: -1;
+					margin-top: 0 !important;
+					margin-bottom: 0.75rem;
+				}
+				
+				body.home-page #header nav:before {
+					display: none !important;
+					content: none !important;
+				}
+			
 			#header .logo {
 				width: 4.75rem;
 				height: 4.75rem;
