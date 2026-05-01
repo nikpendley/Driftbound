@@ -836,7 +836,11 @@ input, select, textarea {
 }
 
 /* Shows stack when hovering over menu */
-.home-menu:hover .home-menu-content {
+/*-- .home-menu:hover .home-menu-content {
+	display: flex;
+} --*/
+
+.home-menu.open .home-menu-content {
 	display: flex;
 }
 
