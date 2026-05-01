@@ -1768,7 +1768,7 @@ background: rgba(255,255,255,0.05);
 	background-position: center center;
 	background-repeat: no-repeat;
 
-	transform: scale(1.0, 1.0);
+	transform: scale(1.0, 0.85);
 	transform-origin: center center;
 }
 
