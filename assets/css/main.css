@@ -1302,18 +1302,13 @@ input, select, textarea {
 		-moz-justify-content: space-between;
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
-		justify-content: space-between;
+		justify-content: flex-start;
 		position: relative;
 		min-height: 100vh;
 		width: 100%;
 		padding: 0 2rem 2rem 2rem;
 		z-index: 3;
 	}
-
-		#wrapper:before {
-			content: '';
-			display: block;
-		}
 
 		@media screen and (max-width: 1680px) {
 
