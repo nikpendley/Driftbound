@@ -710,9 +710,11 @@ input, select, textarea {
 
 			.image.fit img,
 			.image.main img {
-			    width: 100%;
+			    display: block;
+			    max-width: 100%;
+			    width: auto;
 			    height: auto;
-			    object-fit: contain;
+			    margin: 0 auto;
 			}
 
 		@media screen and (max-width: 736px) {
