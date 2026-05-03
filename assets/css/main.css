@@ -1828,5 +1828,23 @@ background: rgba(255,255,255,0.05);
 	border-bottom: none;
 }
 body {
-    padding-top: 130px;
+    padding-top: 170px;
+}
+
+:root {
+    --top-banner-height: 170px;
+}
+
+.top-logo-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--top-banner-height);
+    z-index: 9999;
+    overflow: hidden;
+}
+
+body {
+    padding-top: var(--top-banner-height);
 }
