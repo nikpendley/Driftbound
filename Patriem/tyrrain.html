@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Tyrrain | Patriem | Driftbound</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Persistent Top Banner -->
+		<header class="top-logo-banner">
+			<a href="../index.html" aria-label="Return Home"></a>
+		</header>
+
+		<!-- Menu -->
+		<div class="home-menu">
+			<button class="home-menu-button" id="menuToggle" type="button">Menu</button>
+
+			<div class="home-menu-content">
+				<a href="../index.html">Home</a>
+				<a href="../Atost.html">Atost</a>
+				<a href="index.html" class="submenu-link">Patriem</a>
+				<a href="../marelora.html">Mare'Lora</a>
+				<a href="../arkadia.html">Arkadia</a>
+				<a href="../about.html">About Us</a>
+			</div>
+		</div>
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Header -->
+			<header id="header">
+				<div class="content">
+					<div class="inner">
+						<h1>Tyrrain</h1>
+						<h3>The Northern Darkin Stronghold</h3>
+						<p>Tyrrain is a northern region with a large Darkin-heavy population, founded by the Shaded Mage.</p>
+						<p>The region is well provided for and generally content, though it remains extremely exclusive about who is allowed to live in or around the city.</p>
+					</div>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="index.html">Patriem Home</a></li>
+						<li><a href="#overview">Overview</a></li>
+						<li><a href="#legacy">Legacy of the Shaded Mage</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<!-- Main -->
+			<div id="main">
+				<!-- overview -->
+				<article id="overview">
+					<h2 class="major">Overview</h2>
+					<p>Tyrrain is one of the most secure and self-contained regions of Patriem. Its people value privacy, protection, and cultural preservation, making the region difficult for outsiders to enter and even harder for them to understand.</p>
+				</article>
+
+				<!-- legacy -->
+				<article id="legacy">
+					<h2 class="major">Legacy of the Shaded Mage</h2>
+					<p>Founded by the Shaded Mage, Tyrrain carries an old and powerful legacy. Its Darkin population views that inheritance not merely as history, but as a responsibility to be guarded from the influence of the wider continent.</p>
+				</article>
+			</div>
+			
+			<!-- Footer -->
+			<footer id="footer">
+				<p class="copyright">&copy; Driftbound LLC.</p>
+			</footer>
+
+		</div>
+
+		<!-- BG -->
+		<div id="bg"></div>
+
+		<!-- Scripts -->
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/browser.min.js"></script>
+		<script src="../assets/js/breakpoints.min.js"></script>
+		<script src="../assets/js/util.js"></script>
+		<script src="../assets/js/main.js"></script>
+		<script>
+	const menu = document.querySelector('.home-menu');
+	const menuButton = document.querySelector('#menuToggle');
+
+	menuButton.addEventListener('click', function (event) {
+		event.stopPropagation();
+		menu.classList.toggle('open');
+	});
+
+	document.addEventListener('click', function (event) {
+		if (!menu.contains(event.target)) {
+			menu.classList.remove('open');
+		}
+	});
+</script>
+
+	</body>
+</html>

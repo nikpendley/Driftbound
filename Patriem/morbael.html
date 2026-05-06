@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Morbael | Patriem | Driftbound</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Persistent Top Banner -->
+		<header class="top-logo-banner">
+			<a href="../index.html" aria-label="Return Home"></a>
+		</header>
+
+		<!-- Menu -->
+		<div class="home-menu">
+			<button class="home-menu-button" id="menuToggle" type="button">Menu</button>
+
+			<div class="home-menu-content">
+				<a href="../index.html">Home</a>
+				<a href="../Atost.html">Atost</a>
+				<a href="index.html" class="submenu-link">Patriem</a>
+				<a href="../marelora.html">Mare'Lora</a>
+				<a href="../arkadia.html">Arkadia</a>
+				<a href="../about.html">About Us</a>
+			</div>
+		</div>
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Header -->
+			<header id="header">
+				<div class="content">
+					<div class="inner">
+						<h1>Morbael</h1>
+						<h3>The Untamed Far North</h3>
+						<p>Morbael is the ancient land of the far north, largely untouched by the greater world.</p>
+						<p>Its people are practical, vicious, and hardy, scattered across hundreds of villages in the unforgiving tundra.</p>
+						<p>They struggle to survive, offer prayers to the spirits of the land, and often feud over resources and habitable territory.</p>
+					</div>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="index.html">Patriem Home</a></li>
+						<li><a href="#overview">Overview</a></li>
+						<li><a href="#spirits">Spirits of the Land</a></li>
+						<li><a href="#thornblades">Thornblades</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<!-- Main -->
+			<div id="main">
+				<!-- overview -->
+				<article id="overview">
+					<h2 class="major">Overview</h2>
+					<p>Morbael is not a single city or kingdom, but a harsh northern expanse of villages, spirits, feuds, and survival. Its people are shaped by the tundra, and the tundra does not tolerate weakness.</p>
+				</article>
+
+				<!-- spirits -->
+				<article id="spirits">
+					<h2 class="major">Spirits of the Land</h2>
+					<p>The people of Morbael offer prayers to the spirits that inhabit the land. These spirits are not distant symbols, but immediate presences tied to survival, weather, hunting, and the deadly balance of the far north.</p>
+				</article>
+
+				<!-- thornblades -->
+				<article id="thornblades">
+					<h2 class="major">Thornblades</h2>
+					<p>Rumors speak of powerful weapons called Thornblades, forged from the souls of many dead. Whether they are sacred relics, cursed arms, or both depends on which village tells the tale.</p>
+				</article>
+			</div>
+			
+			<!-- Footer -->
+			<footer id="footer">
+				<p class="copyright">&copy; Driftbound LLC.</p>
+			</footer>
+
+		</div>
+
+		<!-- BG -->
+		<div id="bg"></div>
+
+		<!-- Scripts -->
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/browser.min.js"></script>
+		<script src="../assets/js/breakpoints.min.js"></script>
+		<script src="../assets/js/util.js"></script>
+		<script src="../assets/js/main.js"></script>
+		<script>
+	const menu = document.querySelector('.home-menu');
+	const menuButton = document.querySelector('#menuToggle');
+
+	menuButton.addEventListener('click', function (event) {
+		event.stopPropagation();
+		menu.classList.toggle('open');
+	});
+
+	document.addEventListener('click', function (event) {
+		if (!menu.contains(event.target)) {
+			menu.classList.remove('open');
+		}
+	});
+</script>
+
+	</body>
+</html>

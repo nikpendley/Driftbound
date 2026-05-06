@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Hal-Kiir Myth | Patriem | Driftbound</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Persistent Top Banner -->
+		<header class="top-logo-banner">
+			<a href="../index.html" aria-label="Return Home"></a>
+		</header>
+
+		<!-- Menu -->
+		<div class="home-menu">
+			<button class="home-menu-button" id="menuToggle" type="button">Menu</button>
+
+			<div class="home-menu-content">
+				<a href="../index.html">Home</a>
+				<a href="../Atost.html">Atost</a>
+				<a href="index.html" class="submenu-link">Patriem</a>
+				<a href="../marelora.html">Mare'Lora</a>
+				<a href="../arkadia.html">Arkadia</a>
+				<a href="../about.html">About Us</a>
+			</div>
+		</div>
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Header -->
+			<header id="header">
+				<div class="content">
+					<div class="inner">
+						<h1>Hal-Kiir Myth</h1>
+						<h3>The Pale Jeweled City</h3>
+						<p>Hal-Kiir Myth translates into the common tongue as The Pale Jeweled City.</p>
+						<p>Hidden deep within the Great Dragon’s Breath Desert, the city has a notably high density of magic users and is ruled by a council of five Magi known as the Archmagi.</p>
+						<p>Its people are wary of outsiders, raising the question of whether Hal-Kiir Myth will one day join the greater world politically or maintain its wall of separation.</p>
+					</div>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="index.html">Patriem Home</a></li>
+						<li><a href="#overview">Overview</a></li>
+						<li><a href="#magi">The Archmagi</a></li>
+						<li><a href="#origins">Possible Maravar Bloodlines</a></li>
+						<li><a href="#military">Firearms and Isolation</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<!-- Main -->
+			<div id="main">
+				<!-- overview -->
+				<article id="overview">
+					<h2 class="major">Overview</h2>
+					<p>Hal-Kiir Myth is one of Patriem’s most mysterious hidden cities. Surrounded by desert and guarded by secrecy, it has developed apart from the greater political world.</p>
+				</article>
+
+				<!-- magi -->
+				<article id="magi">
+					<h2 class="major">The Archmagi</h2>
+					<p>The city is ruled by five powerful Magi known as the Archmagi. In Hal-Kiir Myth, the word Magi refers to casters, whose presence is far more common here than in most known populations.</p>
+				</article>
+
+				<!-- origins -->
+				<article id="origins">
+					<h2 class="major">Possible Maravar Bloodlines</h2>
+					<p>The people appear primarily human, but their unusually high number of natural-born casters has led some to theorize that they descend from an ancient sub-sect of Maravar.</p>
+				</article>
+
+				<!-- military -->
+				<article id="military">
+					<h2 class="major">Firearms and Isolation</h2>
+					<p>Hal-Kiir Myth maintains a military force that uses firearms not dissimilar from wetlock technology found in the land of Mobeir. This makes the city both isolated and dangerous to underestimate.</p>
+				</article>
+			</div>
+			
+			<!-- Footer -->
+			<footer id="footer">
+				<p class="copyright">&copy; Driftbound LLC.</p>
+			</footer>
+
+		</div>
+
+		<!-- BG -->
+		<div id="bg"></div>
+
+		<!-- Scripts -->
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/browser.min.js"></script>
+		<script src="../assets/js/breakpoints.min.js"></script>
+		<script src="../assets/js/util.js"></script>
+		<script src="../assets/js/main.js"></script>
+		<script>
+	const menu = document.querySelector('.home-menu');
+	const menuButton = document.querySelector('#menuToggle');
+
+	menuButton.addEventListener('click', function (event) {
+		event.stopPropagation();
+		menu.classList.toggle('open');
+	});
+
+	document.addEventListener('click', function (event) {
+		if (!menu.contains(event.target)) {
+			menu.classList.remove('open');
+		}
+	});
+</script>
+
+	</body>
+</html>

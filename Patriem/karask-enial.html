@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Karask Enial | Patriem | Driftbound</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Persistent Top Banner -->
+		<header class="top-logo-banner">
+			<a href="../index.html" aria-label="Return Home"></a>
+		</header>
+
+		<!-- Menu -->
+		<div class="home-menu">
+			<button class="home-menu-button" id="menuToggle" type="button">Menu</button>
+
+			<div class="home-menu-content">
+				<a href="../index.html">Home</a>
+				<a href="../Atost.html">Atost</a>
+				<a href="index.html" class="submenu-link">Patriem</a>
+				<a href="../marelora.html">Mare'Lora</a>
+				<a href="../arkadia.html">Arkadia</a>
+				<a href="../about.html">About Us</a>
+			</div>
+		</div>
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Header -->
+			<header id="header">
+				<div class="content">
+					<div class="inner">
+						<h1>Karask Enial</h1>
+						<h3>The City of Remembrance and Regulated Death</h3>
+						<p>Karask Enial is one of the oldest cities on Patriem, first populated by Kor-Athans who journeyed to the Prime Material Plane in search of a home away from the chaos and dogma of their home plane.</p>
+						<p>Founded long ago by its namesake, Karask Enial, Lesser Demon Lord of Greed, the city is often seen as strange and dangerous.</p>
+						<p>It is one of the only places on the continent where necromancy is legal and practiced, though it is treated as a heavily regulated spiritual practice.</p>
+					</div>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="index.html">Patriem Home</a></li>
+						<li><a href="#origins">Origins</a></li>
+						<li><a href="#necromancy">Regulated Necromancy</a></li>
+						<li><a href="#temple">The Temple of Remembrance</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<!-- Main -->
+			<div id="main">
+				<!-- origins -->
+				<article id="origins">
+					<h2 class="major">Origins</h2>
+					<p>Karask Enial began as a refuge for Kor-Athans seeking distance from the turmoil of their native plane. Over time, that refuge became one of Patriem’s oldest and most unusual cities, shaped by outsiders, spiritual law, and the lingering influence of its demonic founder.</p>
+				</article>
+
+				<!-- necromancy -->
+				<article id="necromancy">
+					<h2 class="major">Regulated Necromancy</h2>
+					<p>Necromancy in Karask Enial is not practiced as careless desecration. The Temple of Remembrance guides wayward souls toward peace, while bodies are preserved and transformed into mummified servants of the city.</p>
+				</article>
+
+				<!-- temple -->
+				<article id="temple">
+					<h2 class="major">The Temple of Remembrance</h2>
+					<p>The Temple of Remembrance stands at the heart of the city’s spiritual order. Its rites help separate the soul from the body with dignity before the dead are placed into service, often building infrastructure and aiding the upper class of Karask Enial.</p>
+				</article>
+			</div>
+			
+			<!-- Footer -->
+			<footer id="footer">
+				<p class="copyright">&copy; Driftbound LLC.</p>
+			</footer>
+
+		</div>
+
+		<!-- BG -->
+		<div id="bg"></div>
+
+		<!-- Scripts -->
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/browser.min.js"></script>
+		<script src="../assets/js/breakpoints.min.js"></script>
+		<script src="../assets/js/util.js"></script>
+		<script src="../assets/js/main.js"></script>
+		<script>
+	const menu = document.querySelector('.home-menu');
+	const menuButton = document.querySelector('#menuToggle');
+
+	menuButton.addEventListener('click', function (event) {
+		event.stopPropagation();
+		menu.classList.toggle('open');
+	});
+
+	document.addEventListener('click', function (event) {
+		if (!menu.contains(event.target)) {
+			menu.classList.remove('open');
+		}
+	});
+</script>
+
+	</body>
+</html>
