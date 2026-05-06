@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>The Divide | Patriem | Driftbound</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Persistent Top Banner -->
+		<header class="top-logo-banner">
+			<a href="../index.html" aria-label="Return Home"></a>
+		</header>
+
+		<!-- Menu -->
+		<div class="home-menu">
+			<button class="home-menu-button" id="menuToggle" type="button">Menu</button>
+
+			<div class="home-menu-content">
+			<a href="../index.html">Home</a>
+			<a href="../Atost.html">Atost</a>
+			<a href="index.html">Patriem</a>
+			<a href="../marelora.html">Mare'Lora</a>
+			<a href="../arkadia.html">Arkadia</a>
+			<a href="../about.html">About Us</a>
+		</div>
+		</div>
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Header -->
+			<header id="header">
+				<div class="content">
+					<div class="inner">
+						<h1>The Divide</h1>
+						<span class="image main"><img src="../images/Patriem.jpg" alt="The Divide" /></span>
+						<h3>A central route through Patriem, raised by Mobier and used to avoid the Tiefling Lands.</h3>
+								<p>The Divide is one of Patriem’s most important geographic features, raised by Mobier and remembered as a scar across the continent.</p>
+								<p>It serves as a route to the south for travelers seeking to avoid the danger of the Tiefling Lands.</p>
+								<p>At its center is a gate, making the Divide not only a passage but a strategic and symbolic landmark in Patriem’s history.</p>
+					</div>
+				</div>
+				<nav>
+					<ul>
+								<li><a href="index.html">Patriem Home</a></li>
+								<li><a href="index.html">Patriem Home</a></li>
+								<li><a href="seamount.html">Seamount</a></li>
+								<li><a href="undermountain.html">Undermountain</a></li>
+								<li><a href="elven-glades.html">Elven Glades</a></li>
+								<li><a href="ancient-ruins.html">Ancient Ruins</a></li>
+								<li><a href="farnam.html">Farnam</a></li>
+								<li><a href="divide.html">The Divide</a></li>
+								<li><a href="northwest-mountains.html">NW Mountains</a></li>
+								<li><a href="tiefling-lands.html">Tiefling Lands</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<!-- Footer -->
+			<footer id="footer">
+				<p class="copyright">&copy; Driftbound LLC.</p>
+			</footer>
+
+		</div>
+
+		<!-- BG -->
+		<div id="bg"></div>
+
+		<!-- Scripts -->
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/browser.min.js"></script>
+		<script src="../assets/js/breakpoints.min.js"></script>
+		<script src="../assets/js/util.js"></script>
+		<script src="../assets/js/main.js"></script>
+		<script>
+	const menu = document.querySelector('.home-menu');
+	const menuButton = document.querySelector('#menuToggle');
+
+	menuButton.addEventListener('click', function (event) {
+		event.stopPropagation();
+		menu.classList.toggle('open');
+	});
+
+	document.addEventListener('click', function (event) {
+		if (!menu.contains(event.target)) {
+			menu.classList.remove('open');
+		}
+	});
+</script>
+
+	</body>
+</html>
