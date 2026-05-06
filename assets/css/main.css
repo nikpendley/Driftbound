@@ -1835,3 +1835,17 @@ body {
 body {
     padding-top: var(--top-banner-height);
 }
+/* Lore/Text Background Panels */
+
+#main article p,
+#main article h1,
+#main article h2,
+#main article h3,
+#main article h4,
+#main article ul,
+#main article ol {
+	background: rgba(0, 0, 0, 0.72);
+	padding: 1rem 1.25rem;
+	border-radius: 8px;
+	backdrop-filter: blur(2px);
+}
