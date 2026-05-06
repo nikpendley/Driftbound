@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>The Grand Arcanum | Patriem | Driftbound</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<header class="top-logo-banner">
+			<a href="../index.html" aria-label="Return Home"></a>
+		</header>
+
+		<div class="home-menu">
+			<button class="home-menu-button" id="menuToggle" type="button">Menu</button>
+
+			<div class="home-menu-content">
+				<a href="../index.html">Home</a>
+				<a href="../Atost.html">Atost</a>
+				<a href="index.html" class="submenu-link">Patriem</a>
+				<a href="../marelora.html">Mare'Lora</a>
+				<a href="../arkadia.html">Arkadia</a>
+				<a href="../about.html">About Us</a>
+			</div>
+		</div>
+
+		<div id="wrapper">
+
+			<header id="header">
+				<div class="content">
+					<div class="inner">
+						<h1>The Grand Arcanum</h1>
+						<h3>Atost’s Most Significant School of Magic</h3>
+
+						<p>The Grand Arcanum is Atost’s most significant school of magic, having served as home to some of the most brilliant magical minds across Jandoryn.</p>
+
+						<p>The school is divided into five major houses: the Phoenix, the Firestags, the Owlbears, the Dragons, and the Ravens. Each house carries its own identity, values, and magical reputation.</p>
+					</div>
+				</div>
+
+				<nav>
+					<ul>
+						<li><a href="index.html">Patriem Home</a></li>
+						<li><a href="#phoenix">Phoenix</a></li>
+						<li><a href="#owlbear">Owlbear</a></li>
+						<li><a href="#firestags">Firestags</a></li>
+						<li><a href="#dragons">Dragons</a></li>
+						<li><a href="#ravens">Ravens</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<div id="main">
+
+				<article id="phoenix">
+					<h2 class="major">Phoenix</h2>
+					<p>The House of the Phoenix is known for bright, passionate perfection. Its students are often driven by ideals of brilliance, renewal, and mastery.</p>
+				</article>
+
+				<article id="owlbear">
+					<h2 class="major">Owlbear</h2>
+					<p>The House of the Owlbear values practicality, heartiness, and strength. Its members are bound together as a pact, relying on endurance, loyalty, and collective resilience.</p>
+				</article>
+
+				<article id="firestags">
+					<h2 class="major">Firestags</h2>
+					<p>The House of the Firestags is known for burning heartily, carrying a spirit of courage, warmth, and tireless magical ambition.</p>
+				</article>
+
+				<article id="dragons">
+					<h2 class="major">Dragons</h2>
+					<p>The House of the Dragons is proud and fierce. Its students are often marked by confidence, force of will, and a commanding presence within the arcane world.</p>
+				</article>
+
+				<article id="ravens">
+					<h2 class="major">Ravens</h2>
+					<p>The House of the Ravens are masters of mystery, the unknown, and the delve. They seek hidden truths, forgotten lore, and the secrets buried beneath the surface of magic itself.</p>
+				</article>
+
+			</div>
+
+			<footer id="footer">
+				<p class="copyright">&copy; Driftbound LLC.</p>
+			</footer>
+
+		</div>
+
+		<div id="bg"></div>
+
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/browser.min.js"></script>
+		<script src="../assets/js/breakpoints.min.js"></script>
+		<script src="../assets/js/util.js"></script>
+		<script src="../assets/js/main.js"></script>
+
+		<script>
+			const menu = document.querySelector('.home-menu');
+			const menuButton = document.querySelector('#menuToggle');
+
+			menuButton.addEventListener('click', function (event) {
+				event.stopPropagation();
+				menu.classList.toggle('open');
+			});
+
+			document.addEventListener('click', function (event) {
+				if (!menu.contains(event.target)) {
+					menu.classList.remove('open');
+				}
+			});
+		</script>
+
+	</body>
+</html>
