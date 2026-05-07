@@ -1865,6 +1865,12 @@ body {
 	transform: translateY(-150%);
 	opacity: 0;
 }
+/* World Map Styling */
+
+.world-map {
+	max-width: 900px;
+	margin: 0 auto 2rem auto;
+}
 
 .world-map img {
 	width: 100%;
