@@ -38,12 +38,12 @@
 						<h3>The Northern Darkin Stronghold</h3>
 						<p>Tyrrain is a northern region with a large Darkin-heavy population, founded by the Shaded Mage.</p>
 						<p>The region is well provided for and generally content, though it remains extremely exclusive about who is allowed to live in or around the city.</p>
+						<p>Tyrrain is one of the most secure and self-contained regions of Patriem. Its people value privacy, protection, and cultural preservation, making the region difficult for outsiders to enter and even harder for them to understand.</p>
 					</div>
 				</div>
 				<nav>
 					<ul>
 						<li><a href="index.html">Patriem Home</a></li>
-						<li><a href="#overview">Overview</a></li>
 						<li><a href="#legacy">Legacy of the Shaded Mage</a></li>
 					</ul>
 				</nav>
@@ -51,11 +51,6 @@
 
 			<!-- Main -->
 			<div id="main">
-				<!-- overview -->
-				<article id="overview">
-					<h2 class="major">Overview</h2>
-					<p>Tyrrain is one of the most secure and self-contained regions of Patriem. Its people value privacy, protection, and cultural preservation, making the region difficult for outsiders to enter and even harder for them to understand.</p>
-				</article>
 
 				<!-- legacy -->
 				<article id="legacy">
@@ -95,6 +90,27 @@
 		}
 	});
 </script>
+<script>
+	let lastScrollTop = 0;
 
+	const topBanner = document.querySelector('.top-logo-banner');
+	const homeMenu = document.querySelector('.home-menu');
+
+	window.addEventListener('scroll', function () {
+		const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+		if (scrollTop > lastScrollTop && scrollTop > 100) {
+			// Scrolling down
+			topBanner.classList.add('hide');
+			homeMenu.classList.add('hide');
+		} else {
+			// Scrolling up
+			topBanner.classList.remove('hide');
+			homeMenu.classList.remove('hide');
+		}
+
+		lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+	});
+</script>
 	</body>
 </html>

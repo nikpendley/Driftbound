@@ -96,6 +96,27 @@
 		}
 	});
 </script>
+<script>
+	let lastScrollTop = 0;
 
+	const topBanner = document.querySelector('.top-logo-banner');
+	const homeMenu = document.querySelector('.home-menu');
+
+	window.addEventListener('scroll', function () {
+		const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+		if (scrollTop > lastScrollTop && scrollTop > 100) {
+			// Scrolling down
+			topBanner.classList.add('hide');
+			homeMenu.classList.add('hide');
+		} else {
+			// Scrolling up
+			topBanner.classList.remove('hide');
+			homeMenu.classList.remove('hide');
+		}
+
+		lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+	});
+</script>
 	</body>
 </html>
