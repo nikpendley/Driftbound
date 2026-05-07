@@ -1865,3 +1865,11 @@ body {
 	transform: translateY(-150%);
 	opacity: 0;
 }
+
+.world-map img {
+	width: 100%;
+	height: auto;
+	display: block;
+	border-radius: 10px;
+	box-shadow: 0 0 25px rgba(0,0,0,0.45);
+}
