@@ -1854,3 +1854,14 @@ body {
 	left: 1rem;
 	opacity: 0.7;
 }
+
+/* Hideable Menu */
+
+.home-menu {
+	transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.home-menu.hide {
+	transform: translateY(-150%);
+	opacity: 0;
+}
