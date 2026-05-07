@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Ondreier | Mare'Lora | Driftbound</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Persistent Top Banner -->
+		<header class="top-logo-banner">
+			<a href="../index.html" aria-label="Return Home"></a>
+		</header>
+
+		<!-- Menu -->
+		<div class="home-menu">
+			<button class="home-menu-button" id="menuToggle" type="button">Menu</button>
+
+			<div class="home-menu-content">
+				<a href="../index.html">Home</a>
+				<a href="../Atost.html">Atost</a>
+				<a href="index.html" class="submenu-link">Mare'Lora</a>
+				<a href="../arkadia.html">Arkadia</a>
+				<a href="../about.html">About Us</a>
+			</div>
+		</div>
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Header -->
+			<header id="header">
+				<div class="content">
+					<div class="inner">
+						<h1>Ondreier</h1>
+						<span class="image main"><img src="../images/ondreier.png" alt="" /></span>
+						<h3>The Lands of Deception</h3>
+						<p>Run-Ath-Ik, known more commonly as Ondreier, is the Lands of Deception. Its identity is bound to misdirection, hidden motives, and the dangerous beauty of things that are not what they appear to be.</p>
+						<p>Ondreier is also tied to Saryn Hinual’u, awakener of Wylint’ess Aul Nelluon and steward of Cerlyn Gyrah, the Feather of the Raven.</p>
+					</div>
+				</div>
+				<nav>
+					<ul>
+							<li><a href="index.html">Mare'Lora Home</a></li>
+							<li><a href="#saryn">Saryn Hinual’u</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<!-- Main -->
+			<div id="main">
+				<article id="saryn">
+					<h2 class="major">Saryn Hinual’u</h2>
+					<p>Saryn Hinual’u is the awakener of Wylint’ess Aul Nelluon and steward of Cerlyn Gyrah, called the Feather of the Raven of the House of the Raven.</p>
+				</article>
+
+			</div>
+
+			<!-- Footer -->
+			<footer id="footer">
+				<p class="copyright">&copy; Driftbound LLC.</p>
+			</footer>
+
+		</div>
+
+		<!-- BG -->
+		<div id="bg"></div>
+
+		<!-- Scripts -->
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/browser.min.js"></script>
+		<script src="../assets/js/breakpoints.min.js"></script>
+		<script src="../assets/js/util.js"></script>
+		<script src="../assets/js/main.js"></script>
+	<script>
+	const menu = document.querySelector('.home-menu');
+	const menuButton = document.querySelector('#menuToggle');
+
+	menuButton.addEventListener('click', function (event) {
+		event.stopPropagation();
+		menu.classList.toggle('open');
+	});
+
+	document.addEventListener('click', function (event) {
+		if (!menu.contains(event.target)) {
+			menu.classList.remove('open');
+		}
+	});
+	</script>
+	<script>
+	let lastScrollTop = 0;
+
+	const topBanner = document.querySelector('.top-logo-banner');
+	const homeMenu = document.querySelector('.home-menu');
+
+	window.addEventListener('scroll', function () {
+		const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+		if (scrollTop > lastScrollTop && scrollTop > 100) {
+			topBanner.classList.add('hide');
+			homeMenu.classList.add('hide');
+		} else {
+			topBanner.classList.remove('hide');
+			homeMenu.classList.remove('hide');
+		}
+
+		lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+	});
+	</script>
+	</body>
+</html>

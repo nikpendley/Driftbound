@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Run-Ath-Menartu | Mare'Lora | Driftbound</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Persistent Top Banner -->
+		<header class="top-logo-banner">
+			<a href="../index.html" aria-label="Return Home"></a>
+		</header>
+
+		<!-- Menu -->
+		<div class="home-menu">
+			<button class="home-menu-button" id="menuToggle" type="button">Menu</button>
+
+			<div class="home-menu-content">
+				<a href="../index.html">Home</a>
+				<a href="../Atost.html">Atost</a>
+				<a href="index.html" class="submenu-link">Mare'Lora</a>
+				<a href="../arkadia.html">Arkadia</a>
+				<a href="../about.html">About Us</a>
+			</div>
+		</div>
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Header -->
+			<header id="header">
+				<div class="content">
+					<div class="inner">
+						<h1>Run-Ath-Menartu</h1>
+						<h3>The Lands of Discovery</h3>
+						<p>Run-Ath-Menartu is known as the Lands of Discovery, a shard associated with exploration, knowledge, and the pursuit of what remains hidden.</p>
+						<p>It is tied to Darian Sigmond, the Tome Titan, awakener of An Hied Menartu and steward of Gar Cormi-ira, the Feather of the Owl.</p>
+					</div>
+				</div>
+				<nav>
+					<ul>
+							<li><a href="index.html">Mare'Lora Home</a></li>
+							<li><a href="#darian">Darian Sigmond</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<!-- Main -->
+			<div id="main">
+				<article id="darian">
+					<h2 class="major">Darian Sigmond, the Tome Titan</h2>
+					<p>Darian Sigmond is known as the Tome Titan. He is the awakener of An Hied Menartu and steward of Gar Cormi-ira, called the Feather of the Owl of the House of the Owl.</p>
+				</article>
+
+			</div>
+
+			<!-- Footer -->
+			<footer id="footer">
+				<p class="copyright">&copy; Driftbound LLC.</p>
+			</footer>
+
+		</div>
+
+		<!-- BG -->
+		<div id="bg"></div>
+
+		<!-- Scripts -->
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/browser.min.js"></script>
+		<script src="../assets/js/breakpoints.min.js"></script>
+		<script src="../assets/js/util.js"></script>
+		<script src="../assets/js/main.js"></script>
+	<script>
+	const menu = document.querySelector('.home-menu');
+	const menuButton = document.querySelector('#menuToggle');
+
+	menuButton.addEventListener('click', function (event) {
+		event.stopPropagation();
+		menu.classList.toggle('open');
+	});
+
+	document.addEventListener('click', function (event) {
+		if (!menu.contains(event.target)) {
+			menu.classList.remove('open');
+		}
+	});
+	</script>
+	<script>
+	let lastScrollTop = 0;
+
+	const topBanner = document.querySelector('.top-logo-banner');
+	const homeMenu = document.querySelector('.home-menu');
+
+	window.addEventListener('scroll', function () {
+		const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+		if (scrollTop > lastScrollTop && scrollTop > 100) {
+			topBanner.classList.add('hide');
+			homeMenu.classList.add('hide');
+		} else {
+			topBanner.classList.remove('hide');
+			homeMenu.classList.remove('hide');
+		}
+
+		lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+	});
+	</script>
+	</body>
+</html>

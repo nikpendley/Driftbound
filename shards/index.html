@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Mare'Lora | Shards of Song | Driftbound</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Persistent Top Banner -->
+		<header class="top-logo-banner">
+			<a href="../index.html" aria-label="Return Home"></a>
+		</header>
+
+		<!-- Menu -->
+		<div class="home-menu">
+			<button class="home-menu-button" id="menuToggle" type="button">Menu</button>
+
+			<div class="home-menu-content">
+				<a href="../index.html">Home</a>
+				<a href="../Atost.html">Atost</a>
+				<a href="index.html" class="submenu-link">Mare'Lora</a>
+				<a href="../arkadia.html">Arkadia</a>
+				<a href="../about.html">About Us</a>
+			</div>
+		</div>
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Header -->
+			<header id="header">
+				<div class="content">
+					<div class="inner">
+						<h1>Mare'Lora</h1>
+						<h3>A world shaped by the Songs of Creation, the sleeping Azae, and the nine Shards of Song.</h3>
+						<p>Mare’Lora was created by nine deities wielding ancient magic known as the Songs of Creation, but that magic demanded a price.</p>
+						<p>Each deity finished the song and was cast into a deep slumber, hidden throughout the paradise they had crafted. These sleeping deities became known throughout Mare’Lora as the Azae.</p>
+						<p>When the gods fell, the world was fractured into the nine Shards of Song. Each shard now carries its own identity, mystery, and legacy.</p>
+					</div>
+				</div>
+				<nav>
+					<ul>
+							<li><a href="flamel.html">Shard 1 - Flamel</a></li>
+							<li><a href="terra-draconum.html">Shard 2 - Terra Draconum</a></li>
+							<li><a href="run-ath-tel.html">Shard 3 - Run-Ath-Tel</a></li>
+							<li><a href="ondreier.html">Shard 4 - Ondreier</a></li>
+							<li><a href="run-ath-menartu.html">Shard 5 - Run-Ath-Menartu</a></li>
+							<li><a href="furum.html">Shard 6 - Furum</a></li>
+							<li><a href="tersyio.html">Shard 7 - Tersyio</a></li>
+							<li><a href="theatrum-mentis.html">Shard 8 - Theatrum Mentis</a></li>
+							<li><a href="hammerfall.html">Shard 9 - Hammerfall</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<!-- Footer -->
+			<footer id="footer">
+				<p class="copyright">&copy; Driftbound LLC.</p>
+			</footer>
+
+		</div>
+
+		<!-- BG -->
+		<div id="bg"></div>
+
+		<!-- Scripts -->
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/browser.min.js"></script>
+		<script src="../assets/js/breakpoints.min.js"></script>
+		<script src="../assets/js/util.js"></script>
+		<script src="../assets/js/main.js"></script>
+	<script>
+	const menu = document.querySelector('.home-menu');
+	const menuButton = document.querySelector('#menuToggle');
+
+	menuButton.addEventListener('click', function (event) {
+		event.stopPropagation();
+		menu.classList.toggle('open');
+	});
+
+	document.addEventListener('click', function (event) {
+		if (!menu.contains(event.target)) {
+			menu.classList.remove('open');
+		}
+	});
+	</script>
+	<script>
+	let lastScrollTop = 0;
+
+	const topBanner = document.querySelector('.top-logo-banner');
+	const homeMenu = document.querySelector('.home-menu');
+
+	window.addEventListener('scroll', function () {
+		const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+		if (scrollTop > lastScrollTop && scrollTop > 100) {
+			topBanner.classList.add('hide');
+			homeMenu.classList.add('hide');
+		} else {
+			topBanner.classList.remove('hide');
+			homeMenu.classList.remove('hide');
+		}
+
+		lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+	});
+	</script>
+	</body>
+</html>
