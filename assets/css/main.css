@@ -1887,3 +1887,151 @@ body {
 	width: 65rem;
 	max-width: 92vw;
 }
+
+/* Color accent tester */
+/* =========================================================
+   DRIFTBOUND WORLD PAGE THEMES
+   Add the matching page class to each HTML <body>.
+   Example: <body class="is-preload atost-page">
+========================================================= */
+
+:root {
+	/* Core World Accents */
+	--atost-accent: #b8863b;
+	--atost-glow: rgba(184, 134, 59, 0.35);
+
+	--arkadia-accent: #7fbfff;
+	--arkadia-glow: rgba(127, 191, 255, 0.35);
+
+	--marelora-accent: #7d5cff;
+	--marelora-glow: rgba(125, 92, 255, 0.35);
+
+	--patriem-accent: #8b6b3f;
+	--patriem-glow: rgba(139, 107, 63, 0.35);
+
+	--about-accent: #b8b8b8;
+	--about-glow: rgba(184, 184, 184, 0.28);
+}
+
+/* Shared page theme behavior */
+
+.atost-page #header h1,
+.arkadia-page #header h1,
+.marelora-page #header h1,
+.patriem-page #header h1,
+.about-page #header h1 {
+	transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.atost-page nav a,
+.arkadia-page nav a,
+.marelora-page nav a,
+.patriem-page nav a,
+.about-page nav a {
+	transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/* Atost Theme */
+
+.atost-page #header h1,
+.atost-page h2.major {
+	color: var(--atost-accent);
+	text-shadow: 0 0 14px var(--atost-glow);
+}
+
+.atost-page nav a:hover,
+.atost-page .button:hover,
+.atost-page input[type="submit"]:hover {
+	border-color: var(--atost-accent);
+	box-shadow: 0 0 14px var(--atost-glow);
+	background-color: rgba(184, 134, 59, 0.10);
+}
+
+.atost-page article {
+	border-left: 3px solid var(--atost-accent);
+	box-shadow: -8px 0 18px rgba(184, 134, 59, 0.08);
+}
+
+/* Arkadia Theme */
+
+.arkadia-page #header h1,
+.arkadia-page h2.major {
+	color: var(--arkadia-accent);
+	text-shadow: 0 0 14px var(--arkadia-glow);
+}
+
+.arkadia-page nav a:hover,
+.arkadia-page .button:hover,
+.arkadia-page input[type="submit"]:hover {
+	border-color: var(--arkadia-accent);
+	box-shadow: 0 0 14px var(--arkadia-glow);
+	background-color: rgba(127, 191, 255, 0.10);
+}
+
+.arkadia-page article {
+	border-left: 3px solid var(--arkadia-accent);
+	box-shadow: -8px 0 18px rgba(127, 191, 255, 0.08);
+}
+
+/* Mare'Lora Theme */
+
+.marelora-page #header h1,
+.marelora-page h2.major {
+	color: var(--marelora-accent);
+	text-shadow: 0 0 14px var(--marelora-glow);
+}
+
+.marelora-page nav a:hover,
+.marelora-page .button:hover,
+.marelora-page input[type="submit"]:hover {
+	border-color: var(--marelora-accent);
+	box-shadow: 0 0 14px var(--marelora-glow);
+	background-color: rgba(125, 92, 255, 0.10);
+}
+
+.marelora-page article {
+	border-left: 3px solid var(--marelora-accent);
+	box-shadow: -8px 0 18px rgba(125, 92, 255, 0.08);
+}
+
+/* Patriem Theme */
+
+.patriem-page #header h1,
+.patriem-page h2.major {
+	color: var(--patriem-accent);
+	text-shadow: 0 0 14px var(--patriem-glow);
+}
+
+.patriem-page nav a:hover,
+.patriem-page .button:hover,
+.patriem-page input[type="submit"]:hover {
+	border-color: var(--patriem-accent);
+	box-shadow: 0 0 14px var(--patriem-glow);
+	background-color: rgba(139, 107, 63, 0.10);
+}
+
+.patriem-page article {
+	border-left: 3px solid var(--patriem-accent);
+	box-shadow: -8px 0 18px rgba(139, 107, 63, 0.08);
+}
+
+/* About Page Theme */
+
+.about-page #header h1,
+.about-page h2.major {
+	color: var(--about-accent);
+	text-shadow: 0 0 14px var(--about-glow);
+}
+
+.about-page nav a:hover,
+.about-page .button:hover,
+.about-page input[type="submit"]:hover {
+	border-color: var(--about-accent);
+	box-shadow: 0 0 14px var(--about-glow);
+	background-color: rgba(184, 184, 184, 0.10);
+}
+
+.about-page article {
+	border-left: 3px solid var(--about-accent);
+	box-shadow: -8px 0 18px rgba(184, 184, 184, 0.08);
+}
