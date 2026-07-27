@@ -2040,7 +2040,7 @@ body {
    Projects Page Subheadings
    ========================== */
 
-.projects-page h3,
+.projects-page h4,
 .project-status {
     color: #d9b15a;          /* Matches the Driftbound logo gold */
     font-weight: 600;
