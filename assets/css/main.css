@@ -2036,3 +2036,15 @@ body {
 	border-left: 3px solid var(--about-accent);
 	box-shadow: -8px 0 18px rgba(184, 184, 184, 0.08);
 }
+/* ==========================
+   Projects Page Subheadings
+   ========================== */
+
+.projects-page h3,
+.project-status {
+    color: #d9b15a;          /* Matches the Driftbound logo gold */
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin: 0 0 0.75rem 0;
+}
