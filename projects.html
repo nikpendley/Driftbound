@@ -1,0 +1,198 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Current Projects | Driftbound</title>
+	<link rel="icon" type="image/png" sizes="64x64" href="images/favicon.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<style>
+		.projects-page #wrapper {
+			align-items: center;
+			justify-content: flex-start;
+			padding-top: 3rem;
+		}
+
+		.projects-container {
+			width: min(92%, 62rem);
+			margin: 0 auto 2rem;
+			padding: 2.5rem;
+			background: rgba(19, 21, 25, 0.82);
+			border: solid 1px rgba(255, 255, 255, 0.25);
+			border-radius: 4px;
+			backdrop-filter: blur(5px);
+		}
+
+		.projects-intro {
+			max-width: 46rem;
+			margin-bottom: 2rem;
+		}
+
+		.project-grid {
+			display: grid;
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+			gap: 1.25rem;
+		}
+
+		.project-card {
+			padding: 1.5rem;
+			border: solid 1px rgba(255, 255, 255, 0.2);
+			border-radius: 4px;
+			background: rgba(255, 255, 255, 0.045);
+		}
+
+		.project-card h3 {
+			margin-bottom: 0.5rem;
+		}
+
+		.project-status {
+			display: inline-block;
+			margin-bottom: 1rem;
+			padding: 0.25rem 0.65rem;
+			border: solid 1px rgba(255, 255, 255, 0.28);
+			border-radius: 2rem;
+			font-size: 0.72rem;
+			font-weight: 600;
+			letter-spacing: 0.14rem;
+			text-transform: uppercase;
+		}
+
+		.projects-actions {
+			margin-top: 2rem;
+		}
+
+		@media screen and (max-width: 736px) {
+			.projects-page #wrapper {
+				padding-top: 2rem;
+			}
+
+			.projects-container {
+				padding: 1.75rem 1.25rem;
+			}
+
+			.project-grid {
+				grid-template-columns: 1fr;
+			}
+		}
+	</style>
+</head>
+
+<body class="is-preload projects-page">
+
+	<!-- Persistent Top Banner -->
+	<header class="top-logo-banner">
+		<a href="index.html" aria-label="Return Home"></a>
+	</header>
+
+	<!-- Menu -->
+	<div class="home-menu">
+		<button class="home-menu-button" id="menuToggle" type="button">Menu</button>
+
+		<div class="home-menu-content">
+			<a href="index.html">Home</a>
+			<a href="Atost.html">Atost</a>
+			<a href="marelora.html">Mare'Lora</a>
+			<a href="arkadia.html">Arkadia</a>
+			<a href="about.html">About Us</a>
+		</div>
+	</div>
+
+	<div id="wrapper">
+		<main class="projects-container">
+			<h1 class="major">Current Projects</h1>
+
+			<div class="projects-intro">
+				<p>
+					Driftbound is actively expanding Jandoryn through tabletop releases, fiction, regional development, new maps, and ongoing playtesting. Here is a look at what we are currently building.
+				</p>
+			</div>
+
+			<div class="project-grid">
+				<section class="project-card">
+					<h3>Atost TTRPG Sourcebook</h3>
+					<span class="project-status">Writing &amp; Design</span>
+					<p>
+						A full campaign-setting sourcebook for Atost, designed for compatibility with D&amp;D 5.5e. The book will bring together the world&rsquo;s lore, regions, peoples, creatures, character options, magic, and tools for building adventures throughout Atost.
+					</p>
+				</section>
+
+				<section class="project-card">
+					<h3>Novels in Development</h3>
+					<span class="project-status">In Development</span>
+					<p>
+						Multiple currently untitled books and novels are being written within the canon settings of Jandoryn, expanding its worlds, characters, conflicts, and history beyond the tabletop.
+					</p>
+				</section>
+
+				<section class="project-card">
+					<h3>Expanded Regions and Maps</h3>
+					<span class="project-status">Ongoing</span>
+					<p>
+						More regions are being developed across Jandoryn alongside new and expanded maps. These additions will continue to reveal the cities, nations, wilderness, cultures, and hidden places that shape the setting.
+					</p>
+				</section>
+
+				<section class="project-card">
+					<h3>D&amp;D 5.5e Playtest Material</h3>
+					<span class="project-status">Playtesting</span>
+					<p>
+						New player options, creatures, magic items, spells, and setting material are being created and tested for future Driftbound releases compatible with D&amp;D 5.5e.
+					</p>
+				</section>
+			</div>
+
+			<div class="projects-actions">
+				<a href="index.html" class="button">Return Home</a>
+			</div>
+		</main>
+
+		<footer id="footer">
+			<p class="copyright">&copy; Driftbound LLC.</p>
+		</footer>
+	</div>
+
+	<div id="bg"></div>
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script>
+		const menu = document.querySelector('.home-menu');
+		const menuButton = document.querySelector('#menuToggle');
+
+		menuButton.addEventListener('click', function (event) {
+			event.stopPropagation();
+			menu.classList.toggle('open');
+		});
+
+		document.addEventListener('click', function (event) {
+			if (!menu.contains(event.target)) {
+				menu.classList.remove('open');
+			}
+		});
+	</script>
+	<script>
+		let lastScrollTop = 0;
+		const topBanner = document.querySelector('.top-logo-banner');
+		const homeMenu = document.querySelector('.home-menu');
+
+		window.addEventListener('scroll', function () {
+			const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+			if (scrollTop > lastScrollTop && scrollTop > 100) {
+				topBanner.classList.add('hide');
+				homeMenu.classList.add('hide');
+			} else {
+				topBanner.classList.remove('hide');
+				homeMenu.classList.remove('hide');
+			}
+
+			lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+		});
+	</script>
+</body>
+</html>

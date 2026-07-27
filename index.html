@@ -8,6 +8,38 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+	<style>
+		.current-projects-cta {
+			width: min(90%, 48rem);
+			margin: 3rem auto 1.5rem;
+			padding: 2.25rem 2rem;
+			text-align: center;
+			background: rgba(19, 21, 25, 0.72);
+			border: solid 1px rgba(255, 255, 255, 0.25);
+			border-radius: 4px;
+			backdrop-filter: blur(4px);
+		}
+
+		.current-projects-cta h2 {
+			margin-bottom: 0.75rem;
+		}
+
+		.current-projects-cta p {
+			margin: 0 auto 1.5rem;
+			max-width: 38rem;
+		}
+
+		@media screen and (max-width: 480px) {
+			.current-projects-cta {
+				padding: 1.75rem 1.25rem;
+			}
+
+			.current-projects-cta .button {
+				width: 100%;
+			}
+		}
+	</style>
 </head>
 
 <body class="is-preload home-page">
@@ -61,7 +93,6 @@
 					<li><a href="marelora.html">Mare'Lora</a></li>
 					<li><a href="arkadia.html">Arkadia</a></li>
 					<li><a href="about.html">About Us</a></li>
-					<li><a href="#projects">Current Projects</a></li>
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
@@ -71,34 +102,6 @@
 		<!-- MAIN ARTICLES -->
 		<div id="main">
 			
-			<article id="projects">
-				<h2 class="major">Current Projects</h2>
-
-				<p>
-					Driftbound is actively expanding Jandoryn through tabletop releases, fiction, new regional material, and ongoing playtesting.
-				</p>
-
-				<h3>Atost TTRPG Sourcebook</h3>
-				<p>
-					A full campaign setting sourcebook for Atost, designed for compatibility with D&amp;D 5.5e.
-				</p>
-
-				<h3>Novels in Development</h3>
-				<p>
-					Multiple currently untitled books and novels are being written within the canon settings of Jandoryn.
-				</p>
-
-				<h3>Expanded Regions and Maps</h3>
-				<p>
-					More regions are being developed across the setting, alongside new and expanded maps.
-				</p>
-
-				<h3>D&amp;D 5.5e Playtest Material</h3>
-				<p>
-					New player options, creatures, items, and setting material are being created and tested for future release.
-				</p>
-			</article>
-
 			<article id="contact">
 				<h2 class="major">Contact</h2>
 
@@ -132,6 +135,15 @@
 			</article>
 
 		</div>
+
+		<!-- Current Projects Call to Action -->
+		<section class="current-projects-cta" aria-labelledby="current-projects-title">
+			<h2 id="current-projects-title">See What We&rsquo;re Building</h2>
+			<p>
+				Explore the sourcebooks, fiction, maps, and playtest material currently in development at Driftbound.
+			</p>
+			<a href="projects.html" class="button primary">Check Out Our Current Projects</a>
+		</section>
 
 		<!-- Footer -->
 		<footer id="footer">
