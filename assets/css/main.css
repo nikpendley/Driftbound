@@ -1802,7 +1802,7 @@ background: rgba(255,255,255,0.05);
 	position: absolute;
 	inset: 0;
 	background-image: url("../../images/driftbound_banner_clear.png");
-	background-size: 90% auto;
+	background-size: 80% auto;
 	background-position: center 50%;
 	background-repeat: no-repeat;
 }
