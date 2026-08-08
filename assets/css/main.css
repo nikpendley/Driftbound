@@ -2048,3 +2048,17 @@ body {
     letter-spacing: 0.15em;
     margin: 0 0 0.75rem 0;
 }
+
+/* =========================================
+   MOBILE NAVIGATION
+   Hide large homepage navigation buttons
+   and use the fixed Menu dropdown instead
+   ========================================= */
+
+@media screen and (max-width: 736px) {
+
+    #header nav {
+        display: none !important;
+    }
+
+}
