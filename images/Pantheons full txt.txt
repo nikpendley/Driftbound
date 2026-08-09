@@ -1,0 +1,126 @@
+{{wide
+<div class="driftbound-banner">
+
+![Driftbound Banner](https://driftboundpress.com/images/driftbound_banner_clear.png)
+
+</div>
+&nbsp;
+
+# Pantheons of Atost
+}}
+
+{{wide
+Long ago, before humanity spread across Atost and life had further been seeded, there was but the original spirits and beings. Of these beings, the greatest of them formed greater beings that could make and break. There are many powerful entities to worship across Atost. There are three major pantheons that rule in some form of harmony.
+
+
+
+
+## The Dhaer Shesh House Patrons
+}}
+{{wide
+Civilizations are not built by kings alone. Before there were nations, before there were temples, there were the Houses of Dhaer Shesh. Each House represents a single ideal by which society may flourish, and each Patron embodies the eternal responsibility entrusted to that ideal.
+
+
+| Patron                                    | House     | Tenets                 | Common Places of Worship                                                   |
+| :---------------------------------------- | :-------- | :--------------------- | :------------------------------------------------------------------------- |
+| *Cerlyn Gyrah*        | Raven     | Growth                 | A new place                                                                |
+| *Taath-Rua*       | Fox       | Preservation           | An old place                                                               |
+| *Gar Cormi-ira*      | Owl       | Knowledge              | A library or center of knowledge                                           |
+| *Ophidion*        | Snake     | Secrecy, Concealment   | In the in-betweens of places; shadows, alleys, hallways, and hidden spaces |
+| *Stotter*     | Rodent    | Vigilance, Stewardship | Fields, places requiring protection, and amongst crowds                    |
+| *Parlu Mhaor*      | Spider    | Weave, Build, Bind     | At the heart of well-built structures                                      |
+| *Si Tel' Aelria*  | Lynx      | Provision              | On the hunt, during a meal, or around a campfire                           |
+| *Drannor ent Lue* | Chameleon | Adaptation             | Wherever one must adapt; wherever one finds oneself                        |
+
+}}
+
+
+
+{{wide
+### Cerlyn Gyrah, he who Must Grow
+An ancient god of the realm of Dhaer Shesh, Cerlyn Gyrah is known as the Black Lord and is closely associated with the House of Ravens. It is common for followers to make pacts with Cerlyn in pursuit of power. He is said to be locked in eternal conflict with Taath-Rua, though Darkin philosophers often posit that the two gods represent opposing sides of the same metaphorical coin. The House of Ravens heavily opposes the House of Foxes and its philosophy regarding the place of their people in the wider realms.
+}}
+
+{{wide
+### Taath-Rua, he who Must Maintain
+Taath-Rua is known as the Old Wise One and is closely associated with the House of Foxes. He is said to be in eternal conflict with Cerlyn Gyrah, the Black Lord, though some Darkin philosophers regard their opposition as two halves of a greater philosophical whole. The House of Foxes frequently clashes with the House of Ravens, maintaining that Darkins should refrain from involving themselves in the affairs of the Prime Material Plane.
+}}
+
+{{wide
+### Gar Cormi-ira, she who Must Know
+The Queen of Owls, patron of the House of the Owl on Dhaer Shesh. It is said long ago a group of Cormry and Darkin, following the instruction of their master, journeyed to the Prime material plane to satiate their gods' insatiable lust for knowledge. Her realm on Dhaer Shesh is said to be a giant library containing all the knowledge known to mortal races and if she is offered the right gift with bestow any one piece of knowledge one may seek.
+}}
+\page
+{{wide
+### Ophidion, she who Must Conceal
+The Great Serpent, Ophidion is the patron of the House of the Snake on Dhaer Shesh. She is worshiped by the cunning, the sly, and the silver-tongued, and represents the necessity of secrecy and concealment.
+}}
+
+{{wide
+### Stotter, he who Watches the Field
+Of all the Houses in Darkin culture, the House of the Rat is often regarded as the lowest, though those loyal to it hold firmly that the needs of the many outweigh the needs of the few. Its followers possess strong beliefs in family, community, and giving to those in need, often living together in tight-knit communities. Those who seek power from Stotter take up sword and sorcery not for their own advancement, but so that they might give all they can to those who need it.
+}}
+
+{{wide
+### Parlu Mhaor, she who Must Weave
+Patron of the House of the Spider, Parlu Mhaor watches over those who carry out the work of order and structure. In Dhaer Shesh, Parlu is said to have been the Weaver of Order, organizing and laying the foundations for the great structure of the capital city of Myth ath Haera. She was entrusted with organizing the political landscape, keeping those who specialized in other tasks coordinated and operational.
+}}
+
+{{wide
+### Si Tel' Aelria, she who Must Provide
+The Everlasting Huntress, Si Tel’ Aelria represents perseverance in the face of danger and the responsibility to provide despite hardship. Her worshipers often give thanks to her during a hunt or following a successful and bountiful meal, recognizing the struggle required to provide for oneself and others. 
+}}
+
+{{wide
+### Drannor ent Lue, they who Must Change
+Drannor ent Lue, the Everchanging, accepts all as they are and as they wil become. They do not judge, for they can be anything. Formless, yet of form. Changing, yet always the same. Ever present, and always moving. Drannor represents that which must change, and yet will always be the same. 
+}}
+
+
+
+\page
+
+
+### The Lords of Kor Atha
+
+{{wide
+Kor Atha teaches that emotion is neither virtue nor vice. Every soul is shaped by emotion, yet every emotion may elevate or corrupt. The Lords of Kor Atha embody the forces that mold every mortal life.
+}}
+{{wide
+
+| Lord(s)              | Emotion   | Angel or Demon | Symbol                                                      | Layer      |
+| :------------------- | :-------- | :-------: | :---------------------------------------------------------- | :--------- |
+| *Indominus*            | Bravery   |   Angel   | A circle with a diamond in the center                       | Bulwar     |
+| *Serenitus*            | Gratitude |   Angel   | Two circles joined by a direct line                         | Concordis  |
+| *Halcyon*              | Joy       |   Angel   | A seven-pointed sun                                         | Spourvos   |
+| *Malifastus and Altiora* | Pride     |    Both   | A small diamond with triangles pointing upward and downward | Exaltis    |
+| *Phobis*             | Fear      |   Demon   | An eclipsed moon                                            | Domriskall |
+| *Catamalice*          | Anger     |   Demon   | A circle with three claw marks                              | Haleides   |
+| *Petridomus*           | Sadness   |   Demon   | A smudged circle                                            | Desperos   |
+
+}}
+
+
+
+
+\page
+
+{{wide
+
+
+### The Spirits of the North
+
+{{wide
+The people of the North recognize great spirits within the natural world. Though their forms differ, every Spirit of the North bears antlers, marking them as members of the same ancient pantheon.
+}}
+
+| Spirit   | Title                   | Aspect           | Common Places of Worship |
+| :------- | :---------------------- | :--------------- | :----------------------- |
+| *Ekthir*   | Grandfather of the Wood | Deer, Elk, Moose | An unknown forest glade  |
+| *Bolga*    | The Den Mother          | Bears            | A den in the woods       |
+| *Garrow*   | The Pack Leader         | Wolves & Canines | Amongst the pack         |
+| *Volcovyr* | The Sky Guardian        | Birds of Prey    | In open air              |
+| *Ulmyr*    | The Glacial Tide        | Whales & Orcas   | Near the ocean           |
+
+}}
+
