@@ -2090,3 +2090,96 @@ body {
 }
 
 }
+
+/* =========================================
+   HOMEPAGE PATREON BANNER
+   ========================================= */
+
+.patreon-home-banner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1.5rem;
+
+	width: 100%;
+	max-width: 850px;
+	margin: 1.5rem auto;
+
+	padding: 1rem 1.25rem;
+
+	background: rgba(0, 0, 0, 0.55);
+	border: 1px solid rgba(217, 177, 90, 0.7);
+	border-radius: 4px;
+
+	box-shadow: 0 0 18px rgba(217, 177, 90, 0.12);
+	backdrop-filter: blur(4px);
+}
+
+.patreon-home-text {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	line-height: 1.4;
+}
+
+.patreon-home-text strong {
+	color: #d9b15a;
+	text-transform: uppercase;
+	letter-spacing: 0.12em;
+	font-size: 0.9rem;
+}
+
+.patreon-home-text span {
+	color: rgba(255, 255, 255, 0.85);
+	font-size: 0.8rem;
+	margin-top: 0.2rem;
+}
+
+.patreon-home-button {
+	flex-shrink: 0;
+
+	padding: 0.65rem 1rem;
+
+	border: 1px solid #d9b15a !important;
+	border-radius: 4px;
+
+	color: #d9b15a !important;
+	font-size: 0.75rem;
+	font-weight: 600;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	text-decoration: none;
+
+	transition:
+		background-color 0.2s ease,
+		box-shadow 0.2s ease,
+		color 0.2s ease;
+}
+
+.patreon-home-button:hover {
+	background: rgba(217, 177, 90, 0.15);
+	box-shadow: 0 0 14px rgba(217, 177, 90, 0.35);
+	color: #ffffff !important;
+}
+
+
+/* Mobile */
+@media screen and (max-width: 736px) {
+
+	.patreon-home-banner {
+		flex-direction: column;
+		text-align: center;
+		gap: 0.8rem;
+		padding: 1rem;
+		margin: 1.25rem auto;
+	}
+
+	.patreon-home-text {
+		text-align: center;
+	}
+
+	.patreon-home-button {
+		width: 100%;
+	}
+
+}
